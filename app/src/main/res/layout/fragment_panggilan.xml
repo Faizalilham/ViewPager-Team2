@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/semi_black"
+    tools:context=".fragment.PanggilanFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp15"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/danilla"
+            android:layout_margin="@dimen/dp5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:text="@string/user_1"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgProfile"/>
+
+        <ImageView
+            android:id="@+id/imgChecklist"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_in"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp5"
+            app:layout_constraintTop_toBottomOf="@id/tvUsername"
+            app:layout_constraintStart_toEndOf="@id/imgProfile"/>
+
+        <TextView
+            android:id="@+id/tvChatPanggilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/hari_ini"
+            app:layout_constraintTop_toBottomOf="@id/tvUsername"
+            app:layout_constraintStart_toEndOf="@id/imgChecklist" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:src="@drawable/ic_phone_in"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp15"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSecondProfilePanggilan"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/danilla"
+            android:layout_margin="@dimen/dp5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSecondPanggilanUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:text="@string/user_1"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgSecondProfilePanggilan"/>
+
+        <ImageView
+            android:id="@+id/imgSecondChecklistPanggilan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_out"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp5"
+            app:layout_constraintTop_toBottomOf="@id/tvSecondPanggilanUsername"
+            app:layout_constraintStart_toEndOf="@id/imgSecondProfilePanggilan"/>
+
+        <TextView
+            android:id="@+id/tvChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/hari_ini"
+            app:layout_constraintTop_toBottomOf="@id/tvSecondPanggilanUsername"
+            app:layout_constraintStart_toEndOf="@id/imgSecondChecklistPanggilan" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:src="@drawable/ic_phone_out"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

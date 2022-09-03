@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/semi_black"
+    tools:context=".fragment.ChatFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp15"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/danilla"
+            android:layout_margin="@dimen/dp5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:text="@string/user_1"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgProfile"/>
+
+        <ImageView
+            android:id="@+id/imgChecklist"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/checlist"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp20"
+            app:layout_constraintTop_toBottomOf="@id/tvUsername"
+            app:layout_constraintStart_toEndOf="@id/imgProfile"/>
+
+        <TextView
+            android:id="@+id/tvChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/dp10"
+            android:text="@string/hai"
+            android:layout_marginTop="@dimen/dp5"
+            app:layout_constraintTop_toBottomOf="@id/tvUsername"
+            app:layout_constraintStart_toEndOf="@id/imgChecklist" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            android:text="@string/kemarin"
+            android:layout_marginTop="@dimen/dp10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp15"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSecondProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/danilla"
+            android:layout_margin="@dimen/dp5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSecondUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:text="@string/user_2"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgSecondProfile"/>
+
+        <ImageView
+            android:id="@+id/imgSecondChecklist"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/checlist"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp20"
+            app:layout_constraintTop_toBottomOf="@id/tvSecondUsername"
+            app:layout_constraintStart_toEndOf="@id/imgSecondProfile"/>
+
+        <TextView
+            android:id="@+id/tvSecondChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/dp10"
+            android:text="@string/hai"
+            android:layout_marginTop="@dimen/dp5"
+            app:layout_constraintTop_toBottomOf="@id/tvSecondUsername"
+            app:layout_constraintStart_toEndOf="@id/imgSecondChecklist" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            android:text="@string/kemarin"
+            android:layout_marginTop="@dimen/dp10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:src="@drawable/ic_chat"
+            app:backgroundTint="@color/second_green"
+            app:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ViewPager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="user_1">User 1</string>
+    <string name="kemarin">Kemarin</string>
+    <string name="hai">Hai Team 2</string>
+    <string name="user_2">User 2</string>
+    <string name="status_saya">Status saya</string>
+    <string name="deskripsi">Ketuk untuk menambahkan pembaruan</string>
+    <string name="pembaruan_terkini">Pembaruan Terkini</string>
+    <string name="hari_ini">Hari ini 01.53</string>
 </resources>
