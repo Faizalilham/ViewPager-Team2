@@ -52,6 +52,7 @@
             android:layout_height="wrap_content"
             android:background="@color/gray"
             app:tabTextColor="@color/semi_gray"
+            app:tabTextAppearance="@style/MineCustomTabText"
             app:tabIndicatorColor="@color/second_green"
             app:tabSelectedTextColor="@color/second_green"
             app:layout_constraintBottom_toBottomOf="parent"
