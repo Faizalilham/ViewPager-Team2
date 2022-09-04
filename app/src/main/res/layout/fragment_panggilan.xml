@@ -16,8 +16,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgProfile"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@drawable/danilla"
             android:layout_margin="@dimen/dp5"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,8 +78,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgSecondProfilePanggilan"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@drawable/danilla"
             android:layout_margin="@dimen/dp5"
             app:layout_constraintStart_toStartOf="parent"

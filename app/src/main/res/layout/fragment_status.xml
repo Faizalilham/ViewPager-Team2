@@ -14,14 +14,29 @@
         android:layout_height="wrap_content">
 
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgProfile"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/danilla"
+        <RelativeLayout
+            android:id="@+id/layoutImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_margin="@dimen/dp5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/danilla"/>
+
+            <ImageButton
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/btn_round_green"
+                android:src="@drawable/ic_add"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/tvStatusSaya"
@@ -34,7 +49,7 @@
             android:layout_marginTop="@dimen/dp10"
             android:layout_marginStart="@dimen/dp20"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imgProfile"/>
+            app:layout_constraintStart_toEndOf="@id/layoutImage"/>
 
         <TextView
             android:id="@+id/tvDeskripsi"
@@ -45,7 +60,7 @@
             android:layout_marginStart="@dimen/dp20"
             android:text="@string/deskripsi"
             app:layout_constraintTop_toBottomOf="@id/tvStatusSaya"
-            app:layout_constraintStart_toEndOf="@id/imgProfile" />
+            app:layout_constraintStart_toEndOf="@id/layoutImage" />
 
         <TextView
             android:id="@+id/tvstatus"
@@ -57,7 +72,7 @@
             android:layout_marginTop="@dimen/dp20"
             android:text="@string/pembaruan_terkini"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imgProfile"/>
+            app:layout_constraintTop_toBottomOf="@id/layoutImage"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
