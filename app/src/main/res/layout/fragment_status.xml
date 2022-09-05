@@ -26,7 +26,7 @@
                 android:id="@+id/imgProfile"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/danilla"/>
+                android:src="@drawable/danilla" />
 
             <ImageButton
                 android:layout_width="@dimen/dp30"
@@ -80,15 +80,79 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <RelativeLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/status1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:padding="6dp"
+                android:src="@drawable/binar"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/dp5" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvStatusSaya2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Budi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/image_layout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/image_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvStatusSaya3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Budi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/image_layout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDeskripsi2"
+            android:layout_width="263dp"
+            android:layout_height="25dp"
+            android:text="2 jam yang lalu"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintStart_toEndOf="@+id/image_layout"
+            app:layout_constraintTop_toBottomOf="@+id/tvStatusSaya2" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp20"
             android:src="@drawable/ic_edit"
             app:backgroundTint="@color/gray"
-            app:tint="@android:color/white"
             app:layout_constraintBottom_toTopOf="@id/btnCreate"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@android:color/white" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnCreate"
@@ -97,10 +161,69 @@
             android:layout_margin="@dimen/dp20"
             android:src="@drawable/ic_camera"
             app:backgroundTint="@color/second_green"
-            app:tint="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@android:color/white" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/status3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dp10"
+            android:layout_marginTop="14dp"
+            android:padding="6dp"
+            android:src="@drawable/binar"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/dp5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_layout" />
+
+        <TextView
+            android:id="@+id/tvStatusSaya4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Ratna"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/status3"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeskripsi2" />
+
+        <TextView
+            android:id="@+id/tvDeskripsi3"
+            android:layout_width="263dp"
+            android:layout_height="25dp"
+            android:text="10 jam yang lalu"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintStart_toEndOf="@+id/status3"
+            app:layout_constraintTop_toBottomOf="@+id/tvStatusSaya4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp15"
+                android:textColor="@color/semi_gray"
+                android:text="Pembaruan yang dibisukan"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bawah"
+                android:background="@color/semi_black"
+                android:layout_marginLeft="130dp"/>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>
