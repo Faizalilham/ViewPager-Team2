@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ViewPager-Team2/app/src/main/res/drawable/ic_arsip.xml" value="0.141" />
+<<<<<<<<< Temporary merge branch 1
+=========
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ViewPager-Team2/app/src/main/res/layout/fragment_base.xml" value="0.1068840579710145" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ViewPager-Team2/app/src/main/res/layout/fragment_camera.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ViewPager-Team2/app/src/main/res/layout/fragment_chat.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ViewPager-Team2/app/src/main/res/layout/fragment_panggilan.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ViewPager-Team2/app/src/main/res/layout/fragment_status.xml" value="0.17552083333333332" />
+>>>>>>>>> Temporary merge branch 2
         <entry key="app/src/main/res/drawable/ic_arrow_in.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_arrow_out.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/ic_more.xml" value="0.1785" />
