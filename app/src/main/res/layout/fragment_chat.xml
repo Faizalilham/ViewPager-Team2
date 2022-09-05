@@ -8,11 +8,31 @@
     android:background="@color/semi_black"
     tools:context=".fragment.ChatFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp25"
+            android:backgroundTint="@color/semi_black"
+            android:src="@drawable/ic_arsip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp25"
+            android:text="Diarsipkan"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp15"
+            android:textColor="@color/white"/>
+    </LinearLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conssatu"
         android:layout_width="match_parent"
         android:layout_margin="@dimen/dp15"
         android:layout_height="wrap_content">
-
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgProfile"
@@ -133,6 +153,8 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
